@@ -2,7 +2,7 @@
 ## Key requirement : company needs documentation that salaried employee did or did not get overtime each week
 ## Models
 - Post -> date:date rationale:text
-- User -> Devise
+x User -> Devise
 - AdminUser -> STI
 
 ## Features:
