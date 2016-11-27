@@ -10,4 +10,5 @@ FactoryGirl.define do
     rationale "some other rationale"
     user
   end
+  
 end
