@@ -11,7 +11,7 @@ AdminUser.create(email: "admin@admin.com",
                   password_confirmation: "asdfasdf",
                   first_name: 'Admin',
                   last_name: 'Uprety',
-                  phone: "44444")
+                  phone: "4444444444")
 puts "1 admin_user created"
 
 100.times do |post|
