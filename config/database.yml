@@ -47,7 +47,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: Overtime_production
-  username: Overtime
-  password: <%= ENV['OVERTIME_DATABASE_PASSWORD'] %>
+  url: "postgres://yrqgvtmmnaaoja:4kGL7Ad7ZrqRLM15-z3mShzzai@ec2-54-247-177-236.eu-west-1.compute.amazonaws.com:5432/d14j7hnj3820vl"
