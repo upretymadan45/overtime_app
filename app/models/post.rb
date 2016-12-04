@@ -6,4 +6,13 @@ class Post < ApplicationRecord
 
   scope :posts_by, ->(user){where(user_id: user.id)}
   scope :status_by, ->(status){where(status: status)}
+
+  after_save :update_audit_log
+
+  private
+
+  def update_audit_log
+			audit_log = AuditLog.where(user_id: self.user_id, start_date: (self.date - 7.days..self.date)).last
+			audit_log.confirmed!
+	end
 end
